@@ -480,19 +480,4 @@ a:focus {
     outline-offset: 2px;
 }
 
-/* loading state for form */
-.submit-btn.loading {
-    opacity: 0.7;
-    cursor: not-allowed;
-}
 
-.submit-btn.loading::after {
-    content: '';
-    width: 16px;
-    height: 16px;
-    border: 2px solid transparent;
-    border-top-color: currentColor;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin-left: 8px;
-}
