@@ -6,6 +6,7 @@
     <title>Mastio Task</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- top bar -->
@@ -28,7 +29,7 @@
         <div class="icon-wrapper">
             <i class="fab fa-twitter"></i>
         </div>
-        <div class="icon-wrapper">
+        <div class="linkedin">
             <i class="fab fa-linkedin-in"></i>
         </div>
     </div>
@@ -59,14 +60,14 @@
     <!-- hero -->
     <section class="hero-section">
         <div class="hero-wrapper">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-right" >
                 <h1>Take The Right Step For Your Business</h1>
                 <p>Tax Associate is a leading consultancy firm that provides simple, effective company registration, and accounting solutions to enterprises in Ireland.</p>
                 <button class="cta-btn">Get Started</button>
             </div>
             
             <div class="hero-form">
-                <div class="form-box">
+                <div class="form-box" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500">
                     <h2>Apply For Tax Rebate Now</h2>
                     <form id="rebateForm">
                         <div class="input-group">
@@ -105,15 +106,15 @@
 
     <!-- services -->
     <section class="services-section">
-        <div class="service-card">
-            <div class="service-icon">
+        <div class="service-card" data-aos="fade-down" data-aos-duration="500">
+            <div class="service-icon" >
                 <img src="images/Vector.png" alt="startup">
             </div>
             <h3>Start Up Services</h3>
             <p>We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services.</p>
         </div>
         
-        <div class="service-card">
+        <div class="service-card" data-aos="zoom-out" data-aos-duration="500">
             <div class="service-icon">
                 <img src="images/finance.png" alt="finance">
             </div>
@@ -121,7 +122,7 @@
             <p>Our experts assist with financial planning, accounting, and reporting to help your business stay compliant and profitable.</p>
         </div>
         
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="500">
             <div class="service-icon">
                 <img src="images/risk.png  " alt="consulting">
             </div>
@@ -130,6 +131,9 @@
         </div>
     </section>
 
-   
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    </body>
 </html>
